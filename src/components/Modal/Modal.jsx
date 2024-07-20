@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import css from './Modal.module.css';
+import style from './Modal.module.css';
 import PropTypes from 'prop-types';
 
 const Modal = ({ largeImageURL, tags, closeModal }) => {
@@ -21,30 +21,9 @@ const Modal = ({ largeImageURL, tags, closeModal }) => {
     }
   };
 
-  // componentDidMount() {
-  //     window.addEventListener('keydown', this.closeByEsc);
-  //   }
-
-  //   componentWillUnmount() {
-  //     window.removeEventListener('keydown', this.closeByEsc);
-  //   }
-
-  //   closeByEsc = (e) => {
-  //     if (e.code === 'Escape') {
-  //       this.props.closeModal();
-  //     }
-  //   };
-
-  //   closeByBackdrop = event => {
-  //     if (event.target === event.currentTarget) {
-  //       this.props.closeModal();
-  //     }
-  //   };
-
-  // const { largeImageURL, tags } = this.props;
   return (
-    <div className={css.Overlay} onClick={closeByBackdrop}>
-      <div className={css.Modal}>
+    <div className={style.Overlay} onClick={closeByBackdrop}>
+      <div className={style.Modal}>
         <img src={largeImageURL} alt={tags} />
       </div>
     </div>

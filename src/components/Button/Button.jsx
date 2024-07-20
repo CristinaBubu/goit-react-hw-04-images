@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import css from './Button.module.css';
+import style from './Button.module.css';
 
 export default function Button({ onBtnClick }) {
   return (
     <button 
-    className={css.load_btn} 
+    className={style.load_btn} 
     onClick={onBtnClick}
     >
       Load more

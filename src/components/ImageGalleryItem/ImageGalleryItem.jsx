@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../Modal/Modal';
-import css from './ImageGalleryItem.module.css';
+import style from './ImageGalleryItem.module.css';
 import PropTypes from 'prop-types';
 
 const ImageGalleryItem = ({ webformatURL, tags, id, largeImageURL }) => {
@@ -11,9 +11,9 @@ const ImageGalleryItem = ({ webformatURL, tags, id, largeImageURL }) => {
 
   
   return (
-    <li className={css.ImageGalleryItem}>
+    <li className={style.ImageGalleryItem}>
       <img
-        className={css.ImageGalleryItemImage}
+        className={style.ImageGalleryItemImage}
         src={webformatURL}
         alt={tags}
         onClick={toggleModal}
